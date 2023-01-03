@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!-- !Navbar-->
+    <nav class="container m-auto flex justify-between lg;items-baseline lg:p-6">
+        <!-- *Logo -->
+        <div class="logo py-4 px-5">
+            <img src="../icons/logo.svg" alt="logo" class="w-10">
+        </div>
+        <!-- *Hamburger -->
+        <div class="space-y-2 p-3 lg:hidden" id="hamburger">
+            <div class="w-8 h-0.5 bg-gray-600"></div>
+            <div class="w-8 h-0.5 bg-gray-600"></div>
+            <div class="w-8 h-0.5 bg-gray-600"></div>
+        </div>
+
+        <!-- *Menu -->
+        <div class="hidden flex-col items-baseline bg-white h-screen w-8/12 p-3 lg:flex lg:w-max lg:py-0 lg:h-max" id="menu">
+            <!-- Close Icon -->
+            <div class="container flex justify-end text-4xl lg:hidden"><a href="#" id="close">X</a></div>
+            <!-- Menu items -->
+            <div class="space-y-10 flex flex-col my-10 px-3 lg:flex-row lg:space-x-8 lg:space-y-0 lg:m-0 lg:py-4">
+                <a href="#" class="text-xl text-gray-600 lg:text-lg">Home</a>
+                <a href="#" class="text-xl text-gray-600 lg:text-lg">New</a>
+                <a href="#" class="text-xl text-gray-600 lg:text-lg">Popular</a>
+                <a href="#" class="text-xl text-gray-600 lg:text-lg">Trending</a>
+                <a href="#" class="text-xl text-gray-600 lg:text-lg">Categories</a>
+            </div>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+  </body>
+</html>
